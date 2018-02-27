@@ -120,7 +120,7 @@
         methods: {
             add_this_one:function() {
                 if (this.validator.length>0) {
-                    alert("Error(s) found:\n"+this.validator.join("\n"));
+                    Craft.cp.displayNotification('error',"Error(s) found:\n"+this.validator.join("\n"));
                     return;
                 }
                 this.already_added.push(JSON.parse(JSON.stringify(this.to_be_added)));
