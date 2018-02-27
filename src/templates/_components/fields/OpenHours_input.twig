@@ -1,0 +1,6 @@
+<div id="{{ id }}">
+    <business-hours
+            name_prefix="{{namespacedName}}"
+            {% if value %}:already_added_previous="{{ value }}"{% endif %}
+    ></business-hours>
+</div>

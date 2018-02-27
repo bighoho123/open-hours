@@ -1,0 +1,43 @@
+{
+    "name": "simple-team/open-hours",
+    "description": "Add a field type for open hours",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "open hours"
+    ],
+    "support": {
+        "docs": "https://github.com/https://github.com/simple-integrated-marketing/open-hours/blob/master/README.md",
+        "issues": "https://github.com/https://github.com/simple-integrated-marketing/open-hours/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Simple Integrated Marketing",
+            "homepage": "https://simple.com.au"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "simpleteam\\openhours\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Open Hours",
+        "handle": "open-hours",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/https://github.com/simple-integrated-marketing/open-hours/master/CHANGELOG.md",
+        "components": {
+            "openHoursService": "simpleteam\\openhours\\services\\OpenHoursService"
+        },
+        "class": "simpleteam\\openhours\\OpenHours"
+    }
+}
